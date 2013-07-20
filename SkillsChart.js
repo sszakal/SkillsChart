@@ -17,12 +17,12 @@
 
 
 
-function SkillDiagram (skills) {
+function SkillDiagram (skills, elementName)
     this.skills = skills;
     this.draw = function() {
         var width = skills.size;
         
-		var r = Raphael('diagram', width, width);
+		var r = Raphael(elementName, width, width);
 		var rad = width/7;
 		var defaultText = skills.name;
 		var speed = 250;

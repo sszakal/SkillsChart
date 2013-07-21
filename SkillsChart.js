@@ -17,7 +17,7 @@
 
 
 
-function SkillDiagram (skills, elementName)
+function SkillsDiagram (skills, elementName)
 {
     this.skills = skills;
     this.draw = function() {

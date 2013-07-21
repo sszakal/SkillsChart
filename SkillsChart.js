@@ -18,6 +18,7 @@
 
 
 function SkillDiagram (skills, elementName)
+{
     this.skills = skills;
     this.draw = function() {
         var width = skills.size;
@@ -61,8 +62,6 @@ function SkillDiagram (skills, elementName)
             z.data({"entry": this.skills.skills[i]});
             z.mouseover(function(){
                 this.animate({ 'stroke-width': width/14, opacity: .75 }, 1000, 'elastic');
-                if(Raphael.type != 'VML') //solves IE problem
-			    this.toFront();
                 var entry = this.data('entry');
 				title.stop().animate({ opacity: 0 }, speed, '>', function(){
 					this.attr({ text: entry.name + '\n' + entry.value + '%' }).animate({ opacity: 1 }, speed, '<');

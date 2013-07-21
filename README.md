@@ -27,7 +27,7 @@ Usage:
               ]
     }
 
-    var diagram = new SkillDiagram(skills, 'diagram');
+    var diagram = new SkillsDiagram(skills, 'diagram');
     diagram.draw();
 
 Demo: http://jsfiddle.net/stefanszakal/St9Ky/1/
